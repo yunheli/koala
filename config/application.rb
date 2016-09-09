@@ -4,7 +4,7 @@ require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
 require "active_job/railtie"
-require "active_record/railtie"
+# require "active_record/railtie"
 require "action_controller/railtie"
 require "action_mailer/railtie"
 require "action_view/railtie"
@@ -25,6 +25,13 @@ module Koala
     # Only loads a smaller set of middleware suitable for API only apps.
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
+    config.time_zone = 'Beijing'
+
+    config.exceptions_app = self.routes
+        
+    config.generators do |g|
+      g.orm :mongoid
+    end
     config.api_only = true
   end
 end
