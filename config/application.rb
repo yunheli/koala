@@ -33,7 +33,7 @@ module Koala
       g.orm :mongoid
     end
     config.api_only = true
-    config.middleware.insert_after Rack::Runtime, Rack::GridFS,
-                                   prefix: 'uploads', lookup: :path, database: "koala_#{Rails.env}"
+    # config.middleware.insert_after Rack::Runtime, Rack::GridFS,
+    #                                prefix: 'uploads', lookup: :path, database: "koala_#{Rails.env}"
   end
 end
