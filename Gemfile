@@ -8,10 +8,10 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
 gem 'mongoid', '6.0.0.rc0'
 gem "figaro"
-gem 'rack-gridfs'
+# gem 'rack-gridfs'
 gem 'carrierwave'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
-gem 'mongoid-grid_fs'
+# gem 'mongoid-grid_fs'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
