@@ -10,4 +10,6 @@ Rails.application.routes.draw do
     post :file, on: :member
   end
 
+  resources :docs 
+
 end
