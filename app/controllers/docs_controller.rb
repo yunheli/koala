@@ -3,10 +3,10 @@ class DocsController < ApplicationController
   before_action :set_doc, only: [:show]
 
   def create
-    doc = Document.create(file: params[:file])
-    doc.reload
-    doc.refresh_attribute
-    render json: doc
+    @doc = Document.create(file: params[:file])
+    @doc.reload
+    @doc.refresh_attribute
+    render json: @doc
   end
 
   def show
