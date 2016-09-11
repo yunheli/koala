@@ -12,6 +12,8 @@ gem "figaro"
 gem 'carrierwave'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 gem 'active_model_serializers'
+# gem 'moped', '~> 2.0', github: 'mongoid/moped'
+
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
