@@ -11,7 +11,7 @@ gem "figaro"
 # gem 'rack-gridfs'
 gem 'carrierwave'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
-# gem 'mongoid-grid_fs'
+gem 'active_model_serializers'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
