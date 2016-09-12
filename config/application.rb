@@ -34,7 +34,7 @@ module Koala
     end
     config.api_only = true
 
-    # ActiveModelSerializers.config.adapter = :json_api
+    # ActiveModelSerializers.config.adapter = :json
     # config.middleware.insert_after Rack::Runtime, Rack::GridFS,
     #                                prefix: 'uploads', lookup: :path, database: "koala_#{Rails.env}"
   end
