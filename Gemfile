@@ -7,14 +7,17 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # gem 'sqlite3'
 
 gem 'mongoid', '6.0.0.rc0'
-# gem 'moped'
 gem 'bson_ext'
-
 gem "figaro"
-# gem 'rack-gridfs'
 gem 'carrierwave'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 gem 'active_model_serializers'
+
+gem 'redis', '~> 3.3.1', require: ['redis', 'redis/connection/hiredis']
+gem 'hiredis', '~> 0.6.1'
+gem 'redis-objects', '~> 1.2.1'
+gem 'redis-namespace', '~> 1.5.2'
+
 # gem 'moped', '~> 2.0', github: 'mongoid/moped'
 
 

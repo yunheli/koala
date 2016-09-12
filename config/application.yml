@@ -7,6 +7,8 @@
 # stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
 
 domain: "127.0.0.1"
+redis_host: "127.0.0.1"
+redis_port: "6379"
 
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
