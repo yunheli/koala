@@ -29,7 +29,7 @@ module Koala
 
     config.exceptions_app = routes
 
-    config.autoload_paths << Rails.root.join('lib')
+    config.eager_load_paths << Rails.root.join('lib')
 
     config.generators do |g|
       g.orm :mongoid
