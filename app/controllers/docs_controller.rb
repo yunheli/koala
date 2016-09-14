@@ -24,6 +24,6 @@ class DocsController < ApplicationController
   end
 
   def valid_create_params
-    raise CustomError::ResourceTypeError(:file) if params[:file].blank?
+    raise CustomError::ResourceTypeError.new(:file) if params[:file].blank?
   end
 end

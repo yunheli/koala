@@ -14,7 +14,8 @@ module CustomError
   ErrorCode = {
     bad_request:            {
       default:              100100,   #默认错误
-      file:                 100101
+      file:                 100101,
+      mongoid:              100102
     },
     unauthorized:           100020,   #admin为授权错误
     forbidden:              100030,   #操作没权限错误
@@ -48,7 +49,14 @@ module CustomError
 
     def initialize(resource = nil)
       @resource = resource || "Resource"
-      super("#{@resource} type error", :bad_request, @resource, ErrorCode[:bad_request][:resource_type])
+      super("#{@resource} type error", :bad_request, @resource, ErrorCode[:bad_request][@resource.to_sym])
     end
   end
+
+  class MongoidLegalError < BaseError
+
+    def initialize
+      super("Object id is invalid", :bad_request, "MongoidLegalError", ErrorCode[:bad_request][:mongoid])
+    end
+  end  
 end
