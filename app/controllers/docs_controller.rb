@@ -1,5 +1,6 @@
 class DocsController < ApplicationController
 
+  before_action :valid_create_params, only: [:create]
   before_action :set_doc, only: [:show]
 
   def create
@@ -20,5 +21,9 @@ class DocsController < ApplicationController
   private
   def set_doc
     @doc = Document.find(params[:id])
+  end
+
+  def valid_create_params
+    raise CustomError::ResourceTypeError(:file) if params[:file].blank?
   end
 end
