@@ -20,6 +20,7 @@ gem 'redis-namespace', '~> 1.5.2'
 gem 'oj'
 gem 'rack-cors', :require => 'rack/cors'
 gem 'kaminari'
+gem 'puma_worker_killer'
 
 # gem 'moped', '~> 2.0', github: 'mongoid/moped'
 
