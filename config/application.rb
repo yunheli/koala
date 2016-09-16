@@ -29,6 +29,7 @@ module Koala
 
     config.exceptions_app = routes
 
+    # 使用eager_load_paths 不用 auto_load_paths 是为了程序启动时一次性加载
     config.eager_load_paths << Rails.root.join('lib')
 
     config.generators do |g|
