@@ -3,21 +3,18 @@
 require 'securerandom'
 
 module SecureToken
-
- class EncryptorBlankError < StandardError
-
+  class EncryptorBlankError < StandardError
     def initialize
-      super "Encryptor is blank"
+      super 'Encryptor is blank'
     end
-  end
+   end
 
   class << self
-
-    def random_token token_length = 32
+    def random_token(token_length = 32)
       SecureRandom.hex(token_length.to_i / 2)
     end
 
-    def encrypt raw, encryptor = :sha256
+    def encrypt(raw, encryptor = :sha256)
       raw = raw.to_s + Settings.salt
 
       case encryptor
@@ -32,11 +29,11 @@ module SecureToken
       end
     end
 
-    def simple_sign raw, range = 5..8
+    def simple_sign(raw, range = 5..8)
       Digest::MD5.hexdigest(raw.to_s)[range]
     end
 
-    def decrypt mixed
+    def decrypt(mixed)
     end
   end
 end
