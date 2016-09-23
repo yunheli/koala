@@ -21,6 +21,7 @@ gem 'oj'
 gem 'rack-cors', :require => 'rack/cors'
 gem 'kaminari'
 gem 'puma_worker_killer'
+gem 'kaminari'
 
 # gem 'moped', '~> 2.0', github: 'mongoid/moped'
 
