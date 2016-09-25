@@ -23,6 +23,7 @@ gem 'kaminari'
 gem 'puma_worker_killer'
 gem 'kaminari'
 gem 'doorkeeper'
+gem 'devise'
 
 # gem 'moped', '~> 2.0', github: 'mongoid/moped'
 
