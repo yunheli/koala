@@ -25,6 +25,7 @@ gem 'kaminari'
 gem 'doorkeeper'
 gem 'devise'
 gem 'lograge'
+gem 'sneakers'
 
 # gem 'moped', '~> 2.0', github: 'mongoid/moped'
 
