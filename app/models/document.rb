@@ -7,6 +7,8 @@ class Document
   field :size, type: String
   mount_uploader :file, DocumentUploader
 
+  belongs_to :bucket
+
 
   def refresh_attribute
     grid_file = file.file.grid_file

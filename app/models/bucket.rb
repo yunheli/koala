@@ -3,4 +3,6 @@ class Bucket
   include Mongoid::Timestamps
   field :name, type: String
   field :is_private, type: Boolean, default: false # 默认是公开的
+
+  has_many :documents
 end
