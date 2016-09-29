@@ -26,6 +26,7 @@ gem 'doorkeeper'
 gem 'devise'
 gem 'lograge'
 gem 'sneakers'
+gem 'sneakers_packer'
 
 # gem 'moped', '~> 2.0', github: 'mongoid/moped'
 

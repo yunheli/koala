@@ -112,6 +112,7 @@ GEM
     mongoid-grid_fs (2.3.0)
       mime-types (>= 1.0, < 4.0)
       mongoid (>= 3.0, < 7.0)
+    multi_json (1.12.1)
     nio4r (1.2.1)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
@@ -169,6 +170,9 @@ GEM
       serverengine (~> 1.5.11)
       thor
       thread (~> 0.1.7)
+    sneakers_packer (0.1.5)
+      multi_json
+      sneakers (>= 1.0.0)
     spring (1.7.2)
     spring-watcher-listen (2.0.0)
       listen (>= 2.7, < 4.0)
@@ -217,6 +221,7 @@ DEPENDENCIES
   redis-namespace (~> 1.5.2)
   redis-objects (~> 1.2.1)
   sneakers
+  sneakers_packer
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
