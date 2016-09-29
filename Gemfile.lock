@@ -164,6 +164,7 @@ GEM
       railties (>= 4.2.0, < 5.1)
     serverengine (1.5.11)
       sigdump (~> 0.2.2)
+    settingslogic (2.0.9)
     sigdump (0.2.4)
     sneakers (2.3.5)
       bunny (~> 2.2.0)
@@ -220,6 +221,7 @@ DEPENDENCIES
   redis (~> 3.3.1)
   redis-namespace (~> 1.5.2)
   redis-objects (~> 1.2.1)
+  settingslogic
   sneakers
   sneakers_packer
   spring
