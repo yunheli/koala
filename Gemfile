@@ -28,6 +28,7 @@ gem 'lograge'
 gem 'sneakers'
 gem 'sneakers_packer'
 gem 'settingslogic'
+gem 'whenever'
 
 # gem 'moped', '~> 2.0', github: 'mongoid/moped'
 
