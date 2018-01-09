@@ -11,7 +11,7 @@ class Document
   def refresh_attribute
     grid_file = file.file.grid_file
     update_attributes(
-      filename: grid_file.filename,
+      filename: file.filename,
       md5: grid_file.md5,
       content_type: grid_file.contentType,
       size: grid_file.length
